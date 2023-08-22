@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Face</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ear-container">
+            <div class="ear ear1"></div>
+            <div class="ear ear2"></div>
+        </div>
+        <div class="face">
+            <div class="eye-container">
+                <div class="eye">
+                    <div class="eye-ball ball1"></div>
+                    <div class="eye-ball ball1 ball3"></div>
+                </div>
+                <div class="eye">
+                    <div class="eye-ball ball2"></div>
+                    <div class="eye-ball ball2 ball4"></div>
+                </div>
+            </div>
+            <div class="nose">
+                    <div class="nose-hole-container">
+                        <div class="nose-hole"></div>
+                        <div class="nose-hole"></div>
+                    </div>
+                    <div class="mouth">
+
+                    </div>
+            </div>
+        </div>
+    </div> 
+
+    <style>
+      * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #57bce4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ear-container{
+    display: flex;
+    position: absolute;
+    top: 100px;
+}
+
+.ear{
+    width: 80px;
+    height: 150px;
+    background-color: #d64385;
+    border-radius: 50%;
+    margin: 50px;
+    z-index: 0;
+}
+
+.ear1{
+    transform: rotate(-45deg);
+}
+.ear2{
+    transform: rotate(45deg);
+}
+
+.face{
+    width: 300px;
+    height: 300px;
+    background-color: #d7d4d5;
+    border-radius: 50%;
+    position: relative;
+}
+.eye-container{
+    position: absolute;
+    display: flex;
+    left: 20px;
+    top: 20px;
+}
+
+/* .eye{
+    width: 80px;
+    height: 90px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 25px;
+} */
+
+.eye-ball{
+    width: 65px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+}
+.ball1{
+    position: absolute;
+    top: 45px;
+    left: 32px;
+}
+.ball2{
+    position: absolute;
+    top: 45px;
+    left: 163px;
+}
+.ball3{
+    width: 40px;
+    height: 45px;
+    background-color: #F3FDE8;
+    position: absolute;
+    top: 65px;
+    left: 49px;
+}
+.ball4{
+    width: 40px;
+    height: 45px;
+    background-color: #eeebed;
+    position: absolute;
+    top: 65px;
+    left: 180px;
+}
+
+.nose{
+    width: 150px;
+    height: 100px;
+    background-color: #c03659;
+    border-radius: 50%;
+    position: absolute;
+    top: 68%;
+    left:25%;
+    position: relative;
+}
+.nose-hole-container{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+} 
+.nose-hole{
+    width: 35px;
+    height: 25px;
+    border: 1px solid #070706;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+/* .mouth{
+    width: 70px;
+    height: 20px;
+    border-color: #FFBFBF;
+    background: linear-gradient(#FFBFBF,rgba(0,0,0,1));
+    border-radius: 50%;
+    position: absolute;
+    top:60px;
+    left: 42px;
+} */
+
+
+    </style>
+   
+</body>
+</html>
